@@ -104,10 +104,19 @@ using TiendaProducto_Server.Modelo;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\BeneficioIndividual.razor"
+#line 10 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\BeneficioIndividual.razor"
        
     [Parameter]
     public LibroBeneficios Beneficio { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnBeneficioSeleccionado { get; set; }
+
+    protected async Task CambiarBeneficioSeleccionado(MouseEventArgs e,string nombre)
+        {
+        await OnBeneficioSeleccionado.InvokeAsync((string)nombre);
+        }
+
 
 #line default
 #line hidden

@@ -20,14 +20,21 @@
 
         @foreach (var beneficio in ListaBeneficios)
         {
-            <BeneficioIndividual Beneficio="@beneficio"></BeneficioIndividual>
+            <BeneficioIndividual OnBeneficioSeleccionado="CambiarBeneficioSeleccionado" Beneficio="@beneficio"></BeneficioIndividual>
         }
     </div>
+
+    <div class="col-12">
+        <p class="text-secondary">Beneficio Seleccionado: @BeneficioSeleccionado</p>
+    </div>
+
+
 </div>
 
 @code {
 
     public int LibroSeleccionado { get; set; } = 0;
+    public string BeneficioSeleccionado { get; set; } = "";
     List<LibroBlazor> ListaLibros = new List<LibroBlazor>();
     List<LibroBeneficios> ListaBeneficios = new List<LibroBeneficios>();
 
@@ -94,7 +101,13 @@
         else
         {
             LibroSeleccionado--;
-            }
+        }
+
+    }
+
+    protected void CambiarBeneficioSeleccionado(string beneficio)
+    {
+        BeneficioSeleccionado = beneficio;
 
     }
 
