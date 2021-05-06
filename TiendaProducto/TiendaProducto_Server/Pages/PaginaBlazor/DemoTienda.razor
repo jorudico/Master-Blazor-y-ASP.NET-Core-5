@@ -5,12 +5,13 @@
     <h2 class="text-info">Lista de libros</h2>
     <div class="row container">
         <div class="col-12 mt-4">
-            <h4 class="text-info">Libros de tienda</h4>
+            <h4 class="text-info">Lista de tienda</h4>
+            <span>Libros Seleccionados: @LibroSeleccionado</span>
         </div>
 
         @foreach (var libro in ListaLibros)
         {
-            <LibroIndividual libro="@libro"></LibroIndividual>
+            <LibroIndividual OnLibroSeleccionadoCheckbox="CambiarConteo" libro="@libro"></LibroIndividual>
         }
 
         <div class="col-12 mt-4">
@@ -26,6 +27,7 @@
 
 @code {
 
+    public int LibroSeleccionado { get; set; } = 0;
     List<LibroBlazor> ListaLibros = new List<LibroBlazor>();
     List<LibroBeneficios> ListaBeneficios = new List<LibroBeneficios>();
 
@@ -81,4 +83,21 @@
         });
 
     }
+
+
+    protected void CambiarConteo(bool estaSeleccionado)
+    {
+        if (estaSeleccionado)
+        {
+            LibroSeleccionado++;
+        }
+        else
+        {
+            LibroSeleccionado--;
+            }
+
+    }
+
+
+
 }

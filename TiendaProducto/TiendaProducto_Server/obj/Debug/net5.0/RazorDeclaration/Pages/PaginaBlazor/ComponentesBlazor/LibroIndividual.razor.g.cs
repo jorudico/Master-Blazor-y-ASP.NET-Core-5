@@ -104,10 +104,18 @@ using TiendaProducto_Server.Modelo;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\LibroIndividual.razor"
+#line 27 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\LibroIndividual.razor"
        
     [Parameter]
     public LibroBlazor libro { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OnLibroSeleccionadoCheckbox { get; set; }
+    protected async Task CheckboxCambiatLibroSeleccionado(ChangeEventArgs e)
+    {
+        await OnLibroSeleccionadoCheckbox.InvokeAsync((bool)e.Value);
+    }
+
 
 #line default
 #line hidden

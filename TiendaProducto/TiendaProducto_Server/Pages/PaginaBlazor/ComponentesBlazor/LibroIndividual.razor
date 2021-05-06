@@ -3,6 +3,7 @@
 
 <div class="bg-light border p-2 col-5 offset-1">
     <h4 class="text-secondary">Libro: @libro.Id</h4>
+    <input type="checkbox" @onchange="CheckboxCambiatLibroSeleccionado"/>
     @libro.NombreLibro<br />
     @libro.Precio.ToString("c")<br />
     <input type="checkbox" @bind-value="libro.Agotado" checked="@(libro.Agotado ? "checked":null)" />Esta Agotado <br />
@@ -26,4 +27,12 @@
 @code {
     [Parameter]
     public LibroBlazor libro { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OnLibroSeleccionadoCheckbox { get; set; }
+    protected async Task CheckboxCambiatLibroSeleccionado(ChangeEventArgs e)
+    {
+        await OnLibroSeleccionadoCheckbox.InvokeAsync((bool)e.Value);
+    }
+
 }

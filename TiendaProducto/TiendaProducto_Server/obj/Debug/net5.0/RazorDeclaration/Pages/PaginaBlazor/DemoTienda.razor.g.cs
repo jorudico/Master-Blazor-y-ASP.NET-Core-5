@@ -105,9 +105,10 @@ using Modelo;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\DemoTienda.razor"
+#line 28 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\DemoTienda.razor"
        
 
+    public int LibroSeleccionado { get; set; } = 0;
     List<LibroBlazor> ListaLibros = new List<LibroBlazor>();
     List<LibroBeneficios> ListaBeneficios = new List<LibroBeneficios>();
 
@@ -163,6 +164,23 @@ using Modelo;
         });
 
     }
+
+
+    protected void CambiarConteo(bool estaSeleccionado)
+    {
+        if (estaSeleccionado)
+        {
+            LibroSeleccionado++;
+        }
+        else
+        {
+            LibroSeleccionado--;
+            }
+
+    }
+
+
+
 
 #line default
 #line hidden
