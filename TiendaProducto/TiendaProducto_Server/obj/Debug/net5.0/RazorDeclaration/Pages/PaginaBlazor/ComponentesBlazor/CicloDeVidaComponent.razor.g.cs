@@ -96,6 +96,29 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 11 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\CicloDeVidaComponent.razor"
+       
+    [Parameter]
+
+    public int CountValue { get; set; }
+
+    List<string> EventType = new List<string>();
+    protected override void OnInitialized()
+    {
+        EventType.Add("Componente hijo - Se esta llamando a Onitialized");
+        base.OnInitialized();
+    }
+
+    protected override void OnParametersSet()
+    {
+        EventType.Add("Componente hijo - Se esta llamando a OnParametersSet");
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
