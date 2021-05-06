@@ -1,0 +1,12 @@
+﻿@using TiendaProducto_Server.Modelo;
+
+<div class="bg-light border p-2 col-5 offset-1">
+    <h4 class="text-secondary">Beneficio: @Beneficio.Id </h4>
+    @Beneficio.Nombre<br/>
+    @Beneficio.Descripcion<br/>
+</div>
+
+@code {
+    [Parameter]
+    public LibroBeneficios Beneficio { get; set; }
+}

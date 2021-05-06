@@ -1,0 +1,84 @@
+﻿@page "/demoTienda";
+@using Modelo
+<h3>Mostrando libros de tienda</h3>
+<div class="border p-2 mt-2" style="background-color:azure">
+    <h2 class="text-info">Lista de libros</h2>
+    <div class="row container">
+        <div class="col-12 mt-4">
+            <h4 class="text-info">Libros de tienda</h4>
+        </div>
+
+        @foreach (var libro in ListaLibros)
+        {
+            <LibroIndividual libro="@libro"></LibroIndividual>
+        }
+
+        <div class="col-12 mt-4">
+            <h4 class="text-info">Beneficios de libro</h4>
+        </div>
+
+        @foreach (var beneficio in ListaBeneficios)
+        {
+            <BeneficioIndividual Beneficio="@beneficio"></BeneficioIndividual>
+        }
+    </div>
+</div>
+
+@code {
+
+    List<LibroBlazor> ListaLibros = new List<LibroBlazor>();
+    List<LibroBeneficios> ListaBeneficios = new List<LibroBeneficios>();
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        ListaLibros.Add(new LibroBlazor()
+        {
+            Id = 101,
+            NombreLibro = "C# basico",
+            Agotado = true,
+            Precio = 39,
+            LibroTipo = new List<LibroTipo>
+{
+            new LibroTipo{Id=1,Nombre="Programacion",Valor=10},
+            new LibroTipo{Id=1,Nombre="Diseño",Valor=20}
+
+        }
+        });
+        ListaLibros.Add(new LibroBlazor()
+        {
+            Id = 102,
+            NombreLibro = "C# Avanzado",
+            Agotado = true,
+            Precio = 68,
+            LibroTipo = new List<LibroTipo>
+{
+            new LibroTipo{Id=1,Nombre="Programacion",Valor=10},
+            new LibroTipo{Id=1,Nombre="Diseño",Valor=20}
+
+        }
+        });
+
+
+        ListaBeneficios.Add(new LibroBeneficios
+        {
+            Id = 111,
+            Nombre = "Libro gratis",
+            Descripcion = "libro gratis por la proxima compra"
+        });
+        ListaBeneficios.Add(new LibroBeneficios
+        {
+            Id = 113,
+            Nombre = "Autografo",
+            Descripcion = "Autografo del autor"
+        });
+        ListaBeneficios.Add(new LibroBeneficios
+        {
+            Id = 114,
+            Nombre = "Descuento",
+            Descripcion = "Descuento en libros premium"
+        });
+
+    }
+}
