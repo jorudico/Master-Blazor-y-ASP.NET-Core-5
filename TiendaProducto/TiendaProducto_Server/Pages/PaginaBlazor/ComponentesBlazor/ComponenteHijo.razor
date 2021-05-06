@@ -1,0 +1,26 @@
+﻿<div>
+    <div class="alert alert-info">
+        @Titulo
+    </div>
+
+    <div class="alert alert-success">
+        @if (ChildContent == null)
+        {
+
+
+            <span>Ups,al parecer no hay contenido</span>
+        }
+        else
+        {
+            <span>@ChildContent</span>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Titulo { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace TiendaProducto_Server.Shared
+namespace TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor
 {
     #line hidden
     using System;
@@ -89,7 +89,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ComponenteHijo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,16 +97,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Shared\NavMenu.razor"
+#line 20 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\ComponenteHijo.razor"
        
-    private bool collapseNavMenu = true;
+    [Parameter]
+    public string Titulo { get; set; }
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
 
 #line default
 #line hidden
