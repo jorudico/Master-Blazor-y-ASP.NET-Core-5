@@ -89,6 +89,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\CicloDeVida.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/cicloDeVida")]
     public partial class CicloDeVida : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,10 +105,11 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\CicloDeVida.razor"
+#line 21 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\CicloDeVida.razor"
        
     private int currentCount = 0;
     List<string> EventType = new List<string>();
+    private int Count = 5;
 
     private void IncrementCount()
     {
@@ -117,7 +125,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
     protected override async Task OnInitializedAsync()
     {
         EventType.Add("Se esta llamando a OnInitializedAsync");
-        await Task.Delay(1000);
+
     }
 
 
@@ -130,8 +138,46 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
     protected override async Task OnParametersSetAsync()
     {
         EventType.Add("Se esta llamando a OnParametersSetAsync");
-        await Task.Delay(1000);
 
+
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            currentCount = 111;
+        }
+        else
+        {
+            currentCount = 999;
+        }
+        EventType.Add("Se esta llamando a OnAfterRender");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        EventType.Add("Se esta llamando a OnAfterRenderAsync");
+    }
+
+    protected override bool ShouldRender()
+    {
+        EventType.Add("Se esta llamando a ShouldRender");
+        return true;
+    }
+
+    void EmpezarConteo()
+    {
+        var timer = new Timer(TimeCallback,null,1000,1000);
+    }
+
+    void TimeCallback(object state)
+    {
+        if (Count >0)
+        {
+            Count--;
+            InvokeAsync(StateHasChanged);
+        }
     }
 
 
