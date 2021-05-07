@@ -97,13 +97,15 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 21 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\ComponenteHijo.razor"
+#line 32 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\ComponenteHijo.razor"
        
     [Parameter]
     public string Titulo { get; set; }
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public RenderFragment SegunChildContent { get; set; }
 
     [Parameter]
     public EventCallback<MouseEventArgs> MetodoBtnOnClick { get; set; }
