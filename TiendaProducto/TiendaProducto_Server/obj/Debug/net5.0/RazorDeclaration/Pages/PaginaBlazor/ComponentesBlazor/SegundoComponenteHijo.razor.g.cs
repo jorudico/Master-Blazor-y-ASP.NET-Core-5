@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace TiendaProducto_Server.Pages.PaginaBlazor
+namespace TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor
 {
     #line hidden
     using System;
@@ -89,8 +89,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/componentePadre")]
-    public partial class ComponentePadre : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class SegundoComponenteHijo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,13 +97,14 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentePadre.razor"
+#line 8 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SegundoComponenteHijo.razor"
        
-    private string TextoMensaje = "";
-    private void MostrarMensaje(MouseEventArgs e)
-    {
-        TextoMensaje = "Texto desde componente padre";
-    }
+    [Parameter]
+    public string Placeholder { get; set; } = "Texto Inicial";
+    [Parameter]
+    public string Required { get; set; } = "Required";
+    [Parameter]
+    public string MaxLength { get; set; } = "10";
 
 #line default
 #line hidden
