@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace TiendaProducto_Server.Shared
+namespace TiendaProducto_Server.Pages.PaginaBlazor
 {
     #line hidden
     using System;
@@ -89,7 +89,11 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/nuevocomponenteRouting")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting/{parametro1}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting/{parametro1}/{parametro2}")]
+    public partial class ComponenteRouting : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,16 +101,12 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Shared\NavMenu.razor"
+#line 10 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponenteRouting.razor"
        
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    [Parameter]
+    public string Parametro1 { get; set; }
+    [Parameter]
+    public string Parametro2 { get; set; }
 
 #line default
 #line hidden

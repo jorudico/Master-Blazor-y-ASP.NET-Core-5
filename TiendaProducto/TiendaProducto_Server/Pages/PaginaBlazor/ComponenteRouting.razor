@@ -1,0 +1,15 @@
+﻿@page "/componenteRouting"
+@page "/nuevocomponenteRouting"
+@page "/componenteRouting/{parametro1}"
+@page "/componenteRouting/{parametro1}/{parametro2}"
+
+<h3>ComponenteRouting</h3>
+<h4>Parametro 1:@Parametro1</h4>
+<h4>Parametro 2:@Parametro2</h4>
+
+@code {
+    [Parameter]
+    public string Parametro1 { get; set; }
+    [Parameter]
+    public string Parametro2 { get; set; }
+}
