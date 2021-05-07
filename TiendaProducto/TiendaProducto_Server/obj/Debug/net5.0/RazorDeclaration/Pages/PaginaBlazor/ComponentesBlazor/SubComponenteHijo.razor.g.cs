@@ -97,10 +97,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SubComponenteHijo.razor"
+#line 14 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SubComponenteHijo.razor"
        
-    [CascadingParameter]
+    [CascadingParameter(Name = "MensajeDesdePrincipal")]
     public string MensajeParaSubComponente { get; set; }
+
+    [CascadingParameter(Name = "NumeroDesdePrincipal")]
+    public string NumeroDesdePadre { get; set; }
 
 #line default
 #line hidden
