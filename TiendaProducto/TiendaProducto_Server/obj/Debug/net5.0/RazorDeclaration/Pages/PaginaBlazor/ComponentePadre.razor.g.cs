@@ -98,8 +98,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentePadre.razor"
+#line 17 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentePadre.razor"
        
+
+
+
+
+    private string MensajeParaSubComponente = "Este es un mensaje desde componente padre";
     private string TextoMensaje = "";
     private void MostrarMensaje(MouseEventArgs e)
     {

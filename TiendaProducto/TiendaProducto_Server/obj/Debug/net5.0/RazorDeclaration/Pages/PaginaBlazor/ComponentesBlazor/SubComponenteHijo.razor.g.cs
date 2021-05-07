@@ -99,8 +99,8 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #nullable restore
 #line 9 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SubComponenteHijo.razor"
        
-    [Parameter]
-    public string MensajeParaSubComponenteHijo { get; set; }
+    [CascadingParameter]
+    public string MensajeParaSubComponente { get; set; }
 
 #line default
 #line hidden

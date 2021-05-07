@@ -110,6 +110,8 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
     [Parameter]
     public EventCallback<MouseEventArgs> MetodoBtnOnClick { get; set; }
 
+
+
 #line default
 #line hidden
 #nullable disable

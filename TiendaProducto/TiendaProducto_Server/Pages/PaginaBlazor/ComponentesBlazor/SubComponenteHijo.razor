@@ -3,10 +3,10 @@
 <div class="row">
     <h4 class="text-primary pl-2 pt-2 col-12">Sub Componente Hijo</h4>
     <br/>
-    <p>Hay un mensaje - @MensajeParaSubComponenteHijo</p>
+    <p>Hay un mensaje - @MensajeParaSubComponente</p>
 </div>
 
 @code {
-    [Parameter]
-    public string MensajeParaSubComponenteHijo { get; set; }
+    [CascadingParameter]
+    public string MensajeParaSubComponente { get; set; }
 }
