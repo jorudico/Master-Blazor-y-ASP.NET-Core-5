@@ -106,6 +106,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         TextoMensaje = "Texto desde componente padre";
     }
 
+        public Dictionary<string, object> InputAtributosPadre { get; set; } = new Dictionary<string, object>()
+    {
+        { "required","required" },
+        { "placeholder","Ingrese nombre del libro desde padre" },
+        { "maxlength",5 },
+    };
+
 #line default
 #line hidden
 #nullable disable

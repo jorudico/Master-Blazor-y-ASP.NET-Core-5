@@ -99,12 +99,20 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #nullable restore
 #line 8 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SegundoComponenteHijo.razor"
        
+    //[Parameter]
+    //public string Placeholder { get; set; } = "Texto Inicial";
+    //[Parameter]
+    //public string Required { get; set; } = "Required";
+    //[Parameter]
+    //public string MaxLength { get; set; } = "10";
+
     [Parameter]
-    public string Placeholder { get; set; } = "Texto Inicial";
-    [Parameter]
-    public string Required { get; set; } = "Required";
-    [Parameter]
-    public string MaxLength { get; set; } = "10";
+    public Dictionary<string, object> InputAtributos { get; set; } = new Dictionary<string, object>()
+    {
+        { "required","required" },
+        { "placeholder","Texto Inicial" },
+        { "maxlength",10 },
+    };
 
 #line default
 #line hidden

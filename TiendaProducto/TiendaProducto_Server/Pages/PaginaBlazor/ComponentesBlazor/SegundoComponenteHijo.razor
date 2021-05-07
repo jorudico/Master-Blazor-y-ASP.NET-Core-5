@@ -2,14 +2,22 @@
 
 <div>
     <h4  class="text-primary pt-3">Segundo Componente Hijo</h4>
-    <input id="libroNombre" class="form-control" placeholder="@Placeholder" required="@Required" maxlength="@MaxLength"/>
+    <input id="libroNombre" class="form-control" @attributes="InputAtributos"/>
 </div>
 
 @code {
+    //[Parameter]
+    //public string Placeholder { get; set; } = "Texto Inicial";
+    //[Parameter]
+    //public string Required { get; set; } = "Required";
+    //[Parameter]
+    //public string MaxLength { get; set; } = "10";
+
     [Parameter]
-    public string Placeholder { get; set; } = "Texto Inicial";
-    [Parameter]
-    public string Required { get; set; } = "Required";
-    [Parameter]
-    public string MaxLength { get; set; } = "10";
+    public Dictionary<string, object> InputAtributos { get; set; } = new Dictionary<string, object>()
+    {
+        { "required","required" },
+        { "placeholder","Texto Inicial" },
+        { "maxlength",10 },
+    };
 }
