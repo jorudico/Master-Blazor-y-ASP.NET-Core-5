@@ -89,7 +89,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
-    public partial class SegundoComponenteHijo : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class SubComponenteHijo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,18 +97,10 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 8 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SegundoComponenteHijo.razor"
+#line 9 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponentesBlazor\SubComponenteHijo.razor"
        
-    //[Parameter]
-    //public string Placeholder { get; set; } = "Texto Inicial";
-    //[Parameter]
-    //public string Required { get; set; } = "Required";
-    //[Parameter]
-    //public string MaxLength { get; set; } = "10";
-
-    [Parameter (CaptureUnmatchedValues =true)]
-    public Dictionary<string, object> InputAtributos { get; set; } = new Dictionary<string, object>();
-
+    [Parameter]
+    public string MensajeParaSubComponenteHijo { get; set; }
 
 #line default
 #line hidden

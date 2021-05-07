@@ -27,6 +27,7 @@
 
     </div>
     <button class="btn btn-danger" @onclick="MetodoBtnOnClick">Click</button>
+    <SubComponenteHijo MensajeParaSubComponenteHijo="@MensajeParaSubComponenteHijo"></SubComponenteHijo>
 </div>
 
 @code {
@@ -40,4 +41,7 @@
 
     [Parameter]
     public EventCallback<MouseEventArgs> MetodoBtnOnClick { get; set; }
+
+    [Parameter]
+    public string MensajeParaSubComponenteHijo { get; set; }
 }
