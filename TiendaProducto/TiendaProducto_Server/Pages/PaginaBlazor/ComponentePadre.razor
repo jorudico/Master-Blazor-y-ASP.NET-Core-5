@@ -6,7 +6,7 @@
     <SegunChildContent>Segundo contenido por RenderFragment</SegunChildContent>
 </ComponenteHijo>
 
-<SegundoComponenteHijo InputAtributos="InputAtributosPadre"></SegundoComponenteHijo>
+<SegundoComponenteHijo placeholder="Placeholder determinado" ></SegundoComponenteHijo>
 
 
 <p><b>@TextoMensaje</b></p>
@@ -20,10 +20,4 @@
         TextoMensaje = "Texto desde componente padre";
     }
 
-        public Dictionary<string, object> InputAtributosPadre { get; set; } = new Dictionary<string, object>()
-    {
-        { "required","required" },
-        { "placeholder","Ingrese nombre del libro desde padre" },
-        { "maxlength",5 },
-    };
 }

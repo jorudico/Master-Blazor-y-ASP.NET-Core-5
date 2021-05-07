@@ -2,7 +2,7 @@
 
 <div>
     <h4  class="text-primary pt-3">Segundo Componente Hijo</h4>
-    <input id="libroNombre" class="form-control" @attributes="InputAtributos"/>
+    <input id="libroNombre" class="form-control" @attributes="InputAtributos" placeholder="Texto inicial" />
 </div>
 
 @code {
@@ -13,11 +13,7 @@
     //[Parameter]
     //public string MaxLength { get; set; } = "10";
 
-    [Parameter]
-    public Dictionary<string, object> InputAtributos { get; set; } = new Dictionary<string, object>()
-    {
-        { "required","required" },
-        { "placeholder","Texto Inicial" },
-        { "maxlength",10 },
-    };
+    [Parameter (CaptureUnmatchedValues =true)]
+    public Dictionary<string, object> InputAtributos { get; set; } = new Dictionary<string, object>();
+
 }
