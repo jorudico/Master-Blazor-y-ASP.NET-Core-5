@@ -13,5 +13,7 @@ namespace AccesoDatos.Data
         {
 
         }
+
+        public DbSet<Libro> Libro { get; set; }
     }
 }
