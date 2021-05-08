@@ -76,3 +76,5 @@ C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\o
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\obj\Debug\net5.0\Razor\Pages\PaginaBlazor\ComponentesBlazor\SubComponenteHijo.razor.g.cs
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\obj\Debug\net5.0\RazorDeclaration\Pages\PaginaBlazor\ComponenteRouting.razor.g.cs
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\obj\Debug\net5.0\Razor\Pages\PaginaBlazor\ComponenteRouting.razor.g.cs
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\obj\Debug\net5.0\RazorDeclaration\Pages\PaginaBlazor\ComponenteAvanzadoRouting.razor.g.cs
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\obj\Debug\net5.0\Razor\Pages\PaginaBlazor\ComponenteAvanzadoRouting.razor.g.cs

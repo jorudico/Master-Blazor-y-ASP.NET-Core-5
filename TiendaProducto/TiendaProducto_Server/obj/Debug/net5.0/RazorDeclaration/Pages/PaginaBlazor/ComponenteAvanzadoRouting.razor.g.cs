@@ -89,11 +89,8 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/nuevocomponenteRouting")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting/{parametro1}")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteRouting/{parametro1}/{parametro2}")]
-    public partial class ComponenteRouting : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/componenteavanzadorouting")]
+    public partial class ComponenteAvanzadoRouting : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -101,16 +98,24 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponenteRouting.razor"
+#line 13 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponenteAvanzadoRouting.razor"
        
-    [Parameter]
-    public string Parametro1 { get; set; }
-    [Parameter]
-    public string Parametro2 { get; set; }
+    private string Param1;
+    private string Param2;
+
+    private void CargarParametros()
+    {
+        var absoluteUri = new Uri(NavigationManager.Uri);
+        var ConsultaParametros = System.Web.HttpUtility.ParseQueryString(absoluteUri.Query);
+
+        Param1 = ConsultaParametros["param1"];
+        Param2 = ConsultaParametros["param2"];
+    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591
