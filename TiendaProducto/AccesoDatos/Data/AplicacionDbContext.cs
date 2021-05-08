@@ -9,6 +9,9 @@ namespace AccesoDatos.Data
 {
    public class AplicacionDbContext : DbContext
     {
+        public AplicacionDbContext(DbContextOptions<AplicacionDbContext> options) : base(options)
+        {
 
+        }
     }
 }
