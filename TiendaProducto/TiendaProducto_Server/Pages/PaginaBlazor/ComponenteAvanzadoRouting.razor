@@ -10,6 +10,8 @@
     <button class="btn btn-primary" @onclick="CargarParametros">Cargar Parametros</button>
 </p>
 
+<button class="btn btn-primary" @onclick="Retroceder">Retroceder</button>
+
 @code {
     private string Param1;
     private string Param2;
@@ -22,4 +24,11 @@
         Param1 = ConsultaParametros["param1"];
         Param2 = ConsultaParametros["param2"];
     }
+
+
+    private void Retroceder()
+    {
+        NavigationManager.NavigateTo("componenteRouting");
+    }
+
 }

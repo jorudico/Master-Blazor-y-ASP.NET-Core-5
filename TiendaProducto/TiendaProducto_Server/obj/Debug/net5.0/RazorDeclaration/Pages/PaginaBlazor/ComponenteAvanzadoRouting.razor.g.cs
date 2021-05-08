@@ -98,7 +98,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponenteAvanzadoRouting.razor"
+#line 15 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\PaginaBlazor\ComponenteAvanzadoRouting.razor"
        
     private string Param1;
     private string Param2;
@@ -111,6 +111,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         Param1 = ConsultaParametros["param1"];
         Param2 = ConsultaParametros["param2"];
     }
+
+
+    private void Retroceder()
+    {
+        NavigationManager.NavigateTo("componenteRouting");
+    }
+
 
 #line default
 #line hidden
