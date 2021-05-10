@@ -112,3 +112,5 @@ C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\b
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\bin\Debug\net5.0\AccesoDatos.pdb
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

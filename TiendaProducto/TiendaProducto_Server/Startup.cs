@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TiendaProducto_Server.Data;
+using AutoMapper;
 
 namespace TiendaProducto_Server
 {
@@ -30,6 +31,7 @@ namespace TiendaProducto_Server
         {
             services.AddDbContext<AplicacionDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();

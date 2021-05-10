@@ -10,3 +10,8 @@ C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\obj\Debug\net5.
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\obj\Debug\net5.0\Negocio.dll
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\obj\Debug\net5.0\ref\Negocio.dll
 C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\obj\Debug\net5.0\Negocio.pdb
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\bin\Debug\net5.0\AccesoDatos.dll
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\bin\Debug\net5.0\Modelo.dll
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\bin\Debug\net5.0\AccesoDatos.pdb
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\bin\Debug\net5.0\Modelo.pdb
+C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\Negocio\obj\Debug\net5.0\Negocio.csproj.CopyComplete

@@ -16,7 +16,7 @@ namespace Negocio.Repositorio.IRepositorio
         public Task<IAsyncEnumerable<LibroDTO>> ObtenerListaLibro();
         public Task<LibroDTO> ExisteNombreLibro(string Nombre);
 
-
+        public Task<int> EliminarLibro(int LibroId);
 
     }
 }
