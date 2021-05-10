@@ -1501,14 +1501,14 @@
           "bin/placeholder/AccesoDatos.dll": {}
         }
       },
-      "Modelo/1.0.0": {
+      "Modelos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/Modelo.dll": {}
+          "bin/placeholder/Modelos.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Modelo.dll": {}
+          "bin/placeholder/Modelos.dll": {}
         }
       }
     }
@@ -5763,17 +5763,17 @@
       "path": "../AccesoDatos/AccesoDatos.csproj",
       "msbuildProject": "../AccesoDatos/AccesoDatos.csproj"
     },
-    "Modelo/1.0.0": {
+    "Modelos/1.0.0": {
       "type": "project",
-      "path": "../Modelo/Modelo.csproj",
-      "msbuildProject": "../Modelo/Modelo.csproj"
+      "path": "../Modelos/Modelos.csproj",
+      "msbuildProject": "../Modelos/Modelos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AccesoDatos >= 1.0.0",
       "AutoMapper >= 10.1.1",
-      "Modelo >= 1.0.0"
+      "Modelos >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5814,8 +5814,8 @@
             "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj": {
               "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj"
             },
-            "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj"
+            "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj": {
+              "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj"
             }
           }
         }

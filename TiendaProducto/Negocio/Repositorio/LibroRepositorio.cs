@@ -1,7 +1,7 @@
 ﻿using AccesoDatos.Data;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Modelo;
+using Modelos;
 using Negocio.Repositorio.IRepositorio;
 using System;
 using System.Collections.Generic;

@@ -1540,6 +1540,16 @@
         "runtime": {
           "bin/placeholder/AccesoDatos.dll": {}
         }
+      },
+      "Modelos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Modelos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelos.dll": {}
+        }
       }
     }
   },
@@ -5836,6 +5846,11 @@
       "type": "project",
       "path": "../AccesoDatos/AccesoDatos.csproj",
       "msbuildProject": "../AccesoDatos/AccesoDatos.csproj"
+    },
+    "Modelos/1.0.0": {
+      "type": "project",
+      "path": "../Modelos/Modelos.csproj",
+      "msbuildProject": "../Modelos/Modelos.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5844,7 +5859,8 @@
       "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.5",
+      "Modelos >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5884,6 +5900,9 @@
           "projectReferences": {
             "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj": {
               "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj"
+            },
+            "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj": {
+              "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj"
             }
           }
         }

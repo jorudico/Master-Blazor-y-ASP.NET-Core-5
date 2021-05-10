@@ -89,6 +89,7 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/libro/agregar")]
     public partial class LibroAgregarActualizar : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

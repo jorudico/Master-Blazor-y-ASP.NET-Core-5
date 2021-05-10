@@ -1,6 +1,23 @@
 ﻿@page "/libro/agregar"
-<h3>LibroAgregarActualizar</h3>
+
+@using Modelos;
+
+<div class="row mt-2 mb-5">
+    <h3 class="card-title text-primary mb-3 ml-3">@Titulo Libro</h3>
+    <div class="col-md-12">
+
+        <EditForm Model="LibroModel">
+            <div class="form-group">
+                <label>Nombre</label>
+                <InputText @bind-Value="LibroModel.Nombre" class="form-control"></InputText>
+            </div>
+        </EditForm>
+
+
+    </div>
+</div>
 
 @code {
-
+    private LibroDTO LibroModel { get; set; } = new LibroDTO();
+    public string Titulo { get; set; } = "Agregar";
 }

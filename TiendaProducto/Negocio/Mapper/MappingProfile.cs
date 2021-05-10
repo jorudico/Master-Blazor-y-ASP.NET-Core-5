@@ -1,6 +1,6 @@
 ﻿using AccesoDatos.Data;
 using AutoMapper;
-using Modelo;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

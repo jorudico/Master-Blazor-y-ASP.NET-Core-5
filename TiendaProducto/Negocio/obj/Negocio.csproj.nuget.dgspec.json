@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj": {
+    "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj",
-        "projectName": "Modelo",
-        "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj",
+        "projectUniqueName": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj",
+        "projectName": "Modelos",
+        "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj",
         "packagesPath": "C:\\Users\\Jorudico\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\obj\\",
+        "outputPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -169,8 +169,8 @@
               "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj": {
                 "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\AccesoDatos\\AccesoDatos.csproj"
               },
-              "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj": {
-                "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelo\\Modelo.csproj"
+              "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Users\\Jorudico\\Desktop\\Proyecto_Blazor\\TiendaProducto\\Modelos\\Modelos.csproj"
               }
             }
           }
