@@ -11,6 +11,25 @@
                 <label>Nombre</label>
                 <InputText @bind-Value="LibroModel.Nombre" class="form-control"></InputText>
             </div>
+            <div class="form-group">
+                <label>Precio Regular</label>
+                <InputNumber @bind-Value="LibroModel.PrecioRegular" class="form-control"></InputNumber>
+            </div>
+            <div class="form-group">
+                <label>Autor</label>
+                <InputText @bind-Value="LibroModel.Autor" class="form-control"></InputText>
+            </div>
+            <div class="form-group">
+                <label>Detalles</label>
+                <InputText @bind-Value="LibroModel.Detalles" class="form-control"></InputText>
+            </div>
+
+            <div class="form-group">
+            
+              <button class="btn btn-primary">@Titulo Libro</button>
+                <NavLink href="libro" class="btn btn-secondary">Volver a la lista</NavLink>
+            </div>
+
         </EditForm>
 
 

@@ -89,6 +89,13 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\Libro\LibroAgregarActualizar.razor"
+using Modelos;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/libro/agregar")]
     public partial class LibroAgregarActualizar : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -97,6 +104,15 @@ using TiendaProducto_Server.Pages.PaginaBlazor.ComponentesBlazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 39 "C:\Users\Jorudico\Desktop\Proyecto_Blazor\TiendaProducto\TiendaProducto_Server\Pages\Libro\LibroAgregarActualizar.razor"
+       
+    private LibroDTO LibroModel { get; set; } = new LibroDTO();
+    public string Titulo { get; set; } = "Agregar";
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
